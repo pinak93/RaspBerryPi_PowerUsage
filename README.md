@@ -4,8 +4,6 @@ This project is a part for my research project currently working on. We are usin
 Currently in this version we can track the wakeup time average power consumption of raspberry pi during its working cycle and wake up time for its next cycle
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 Required Software’s
 ```
@@ -33,29 +31,14 @@ Once the file starts running it will send out data to the webpage.
 If you want to run the file at startup of the raspberry pi follow the following steps
 Sudo nano /etc/profile
 Once file is opten go to the file end and paste the below command 
-Sudo python locationOf startup.py 
+Sudo python locationOf/startup.py 
 This will run the file each time you start the raspberry pi.
 Uncommenting the last two line in the in the python code will shutdown the raspberry pi after the run is complete and then again wake up after 2 mins this process will be continuous and thus you won’t be able to interrupt it. 
 If you want to interrupt this then opent he SD card in the computer and edit the lines in the etc/profile file or comment the lines in from the startup.py file from your computer.
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To make this a deployabble projet Kindly make autologin the Raspberry pi and put the program in the startup as mentioned int he Running the tests
 
 ## Built With
 * [LiFePO4wered/Pi3™]( https://lifepo4wered.com/) – API and Hardware
@@ -64,23 +47,10 @@ Add additional notes about how to deploy this on a live system
 * [PubNub]( https://www.pubnub.com/) - PubNub
 * [Eon API]( https://www.pubnub.com/developers/eon/) – Eon API for graphs
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 Pinak Kelkar
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* LiFePO4wered/Pi3™
+* Pubnub

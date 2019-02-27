@@ -40,6 +40,11 @@ If you want to interrupt this then opent he SD card in the computer and edit the
 
 To make this a deployabble projet Kindly make autologin the Raspberry pi and put the program in the startup as mentioned int he Running the tests
 
+## Demo
+
+![Demo](https://user-images.githubusercontent.com/6688096/53468912-0fd27900-3a2a-11e9-8e40-5f6de70fdf3f.gif)
+
+
 ## Built With
 * [LiFePO4wered/Pi3™]( https://lifepo4wered.com/) – API and Hardware
 * [Python]( https://www.python.org/) - Python

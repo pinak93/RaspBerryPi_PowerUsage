@@ -43,7 +43,7 @@ To make this a deployabble projet Kindly make autologin the Raspberry pi and put
 ## Demo
 
 ![Demo](https://user-images.githubusercontent.com/6688096/53468912-0fd27900-3a2a-11e9-8e40-5f6de70fdf3f.gif)
-
+![Demo2](https://user-images.githubusercontent.com/6688096/53470474-c2590a80-3a2f-11e9-98db-d9c3058bd7ac.gif)
 
 ## Built With
 * [LiFePO4wered/Pi3™]( https://lifepo4wered.com/) – API and Hardware

@@ -1,0 +1,68 @@
+<html>
+  <head>
+   <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+<link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
+
+  </head>
+  <body>
+    <style type="text/css">
+      #chart, #chart2 {
+        height: 400px;
+      }
+    </style>
+    <div id="chart"></div>
+   
+
+   <p id="Avg"></p>
+   <p id="SleepingIn"></p>
+   <p id="WakeUp"></p>
+      <p id="wake"></p>
+
+   
+    <script>
+      var pubnub = new PubNub({
+            publishKey: 'pub-c-9c260cad-9e78-4bea-a3a9-f584ea818532',
+            subscribeKey: 'sub-c-2e6e94ce-305d-11e9-a223-2ae0221900a7'
+      });
+	  
+
+	  
+				eon.chart({
+pubnub: pubnub,
+channels: ['test'],
+limit: 10,
+generate: {
+bindto: '#chart'
+}
+});
+
+	  pubnub.subscribe({
+    channels: ['test2'],
+});
+
+pubnub.addListener({
+    message: function(m) {
+        // handle message
+        var channelName = m.channel;
+		var publisher = m.publisher; //The Publisher
+        var msg = m.message; // The Payload
+	
+        if(channelName=='test2'){	
+document.getElementById("Avg").innerHTML = "Average Voltage- " + msg.ON +" V"; 
+document.getElementById("WakeUp").innerHTML = "Status- " + msg.W ; 
+document.getElementById("SleepingIn").innerHTML = "Sleeping in - " + msg.S +" ms"; 
+document.getElementById("wake").innerHTML = "Next Wake Up Time - " + msg.WT; 
+		}
+    }
+});
+
+
+
+    </script>
+
+    <script>
+   
+      
+    </script>
+  </body>
+</html>

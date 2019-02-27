@@ -58,9 +58,11 @@ Give an example
 Add additional notes about how to deploy this on a live system
 
 ## Built With
-* [LiFePO4wered/Pi3™]( https://lifepo4wered.com/) – API and Hardware used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [LiFePO4wered/Pi3™]( https://lifepo4wered.com/) – API and Hardware
+* [Python]( https://www.python.org/) - Python
+* [Raspberry Pi]( https://www.raspberrypi.org/) – Raspberry Pi
+* [PubNub]( https://www.pubnub.com/) - PubNub
+* [Eon API]( https://www.pubnub.com/developers/eon/) – Eon API for graphs
 
 ## Contributing
 
